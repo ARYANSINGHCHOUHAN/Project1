@@ -18,7 +18,11 @@ html, body{
     height: 100%;
     width: 100%;
 }
-
+#main{
+    background-color: #00000059;
+    position: relative;
+    z-index: 10;
+}
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -243,7 +247,92 @@ nav{
     }
 }
 #page3 {
-    height: 100vw;
+    min-height: 100vw;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #373737;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+.elem:hover .overlay{
+    top: 0;
+
+}
+#fixed-image{
+    height: 30vw;
+    width: 23vw;
+    /*background-color: red;*/
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+#page4{
+    height: 60vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+#page5{
+    height: 110vh;
+    width: 100%;
+
+}
+#footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
+#footer h1{
+    font-size: 23vw;
+}
+#footer-div{
+    height: 20vh;
+    width: 100%;
+   /* background-color: red; */
+
+}
+#footer-div h3{
+    font-size: 3vw;
+    text-align: left;
+    line-height: 3vw;
+    display: flex;
+
+}
+#footer-bottom{
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
 }
