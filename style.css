@@ -36,6 +36,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
 }
 #nav-part2{
     display: flex;
@@ -303,6 +304,17 @@ nav{
     width: 100%;
 
 }
+#page5 #animation2{
+    height: 10vw;
+    width: 100%;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(20px);
+    background: linear-gradient(to top,#FE320A,#FE320A);
+    visibility: calc(20px);
+
+    
+}
 #footer{
     position: fixed;
     z-index: 9;
@@ -329,10 +341,11 @@ nav{
     text-align: left;
     line-height: 3vw;
     display: flex;
+    z-index: 1000;
 
 }
 #footer-bottom{
-    border-top: 1px solid #dadada;
+    border-top: 1px solid #ffffff;
     height: 10vh;
     width: 100%;
 }
