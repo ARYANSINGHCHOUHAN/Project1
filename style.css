@@ -295,10 +295,29 @@ nav{
     background-position: center;
 }
 #page4{
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 8vw 2vw;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+
+    width: 30%;
+    border-left: 1px solid #232323;
+  }
+.swiper-slide img {
+    padding: 1vw;
+}
+.swiper-slide img1 {
+    top: 0;
+    padding: 1vw;
+}
+
 #page5{
     height: 110vh;
     width: 100%;
